@@ -4,6 +4,7 @@
 package br.com.victor.dao;
 
 import br.com.victor.dao.generic.GenericDAO;
+import br.com.victor.dao.generic.GenericDB1DAO;
 import br.com.victor.domain.Cliente;
 import br.com.victor.domain.Produto;
 import br.com.victor.domain.Venda;
@@ -15,11 +16,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-/**
- * @author victor.vianna
- *
- */
-public class VendaDAO extends GenericDAO<Venda, Long> implements IVendaDAO {
+public class VendaDAO extends GenericDB1DAO<Venda, Long> implements IVendaDAO {
 
 	public VendaDAO() {
 		super(Venda.class);

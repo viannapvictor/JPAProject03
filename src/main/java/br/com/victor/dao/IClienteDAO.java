@@ -10,6 +10,6 @@ import br.com.victor.domain.Cliente;
  * @author victor.vianna
  *
  */
-public interface IClienteDAO extends IGenericDAO<Cliente, Long>{
+public interface IClienteDAO<T extends Persistente> extends IGenericDAO<T, Long>{
 
 }

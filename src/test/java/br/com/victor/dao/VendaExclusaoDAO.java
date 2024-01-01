@@ -5,17 +5,12 @@ package br.com.victor.dao;
 
 import br.com.victor.dao.generic.GenericDAO;
 import br.com.victor.dao.IVendaDAO;
+import br.com.victor.dao.generic.GenericDB1DAO;
 import br.com.victor.domain.Venda;
 import br.com.victor.exceptions.DAOException;
 import br.com.victor.exceptions.TipoChaveNaoEncontradaException;
 
-/**
- * @author victor.vianna
- *
- * Classe utilizada somente no teste para fazer a exclusão das vendas
- *
- */
-public class VendaExclusaoDAO extends GenericDAO<Venda, Long> implements IVendaDAO {
+public class VendaExclusaoDAO extends GenericDB1DAO<Venda, Long> implements IVendaDAO {
 
 	public VendaExclusaoDAO() {
 		super(Venda.class);
